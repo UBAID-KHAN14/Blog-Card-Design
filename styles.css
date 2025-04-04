@@ -1,0 +1,71 @@
+/* === Fonts: Figtree === */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    font-family: "Figtree", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ✨ ========== Root Section ========== ✨ */
+:root{
+    --bg-color: #F6D050;
+    --text-color: #F6D050;
+    --card-color: #fff;
+    --black: #000000;
+}
+/* ✨ ================================ ✨ */
+
+
+/* ==================== Layout ==================== */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    margin: 0 auto;
+    height: 100vh;
+  
+}
+
+/* ==== Start: Card Component ==== */
+section .container{
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    background-color: var(--card-color); /* Background color */
+    border-radius: 15px;
+    box-shadow: 8px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid var(--black); /* Border color */
+}
+.container .img{
+    border-radius: 10px;
+    width: 100%;
+}
+.container .learning{
+    font-size: 17px;
+    font-weight: 800;
+    padding: 5px 10px;
+    width: 29%;
+    border-radius: 5px;
+    background-color: var(--bg-color); /* Background color */
+}
+.container h3{
+    color: var(--text-color); /* Text color */
+}
+.container .small-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.container .small-container img{
+    width: 100%;
+   max-width: 40px;
+}
+.container .small-container p{
+    font-weight: 800;
+}
+/* ==== End: Card Component ==== */
